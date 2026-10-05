@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* light theme tokens (RGB triplets) */
+  --c-bg: 241 245 249;
+  --c-surface: 255 255 255;
+  --c-border: 203 213 225;
+  --c-fg: 15 23 42;
+  --c-muted: 71 85 105;
+  --c-accent: 8 145 178;
+  --c-warn: 217 119 6;
+  --c-danger: 220 38 38;
+}
+
+.dark {
+  /* dark navy / charcoal, cyan accent */
+  --c-bg: 11 18 32;
+  --c-surface: 17 26 43;
+  --c-border: 36 50 74;
+  --c-fg: 226 232 240;
+  --c-muted: 148 163 184;
+  --c-accent: 34 211 238;
+  --c-warn: 251 191 36;
+  --c-danger: 248 113 113;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-bg text-fg font-sans text-base antialiased;
+}
+
+/* tabular numerals for all measurements */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--c-accent));
+  outline-offset: 2px;
+}

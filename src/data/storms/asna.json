@@ -1,0 +1,5546 @@
+{
+  "id": "asna",
+  "name": "Asna",
+  "basin": "Arabian Sea",
+  "season": "Aug-Sep 2024",
+  "role": "atypical",
+  "synthetic": true,
+  "note": "Track and values are illustrative, loosely inspired by the real event.",
+  "reason": "Atypical: formed over land (Gujarat) and moved out to the Arabian Sea, a pattern rare in training data.",
+  "caseFigures": {
+    "title": "Asna case-report figures (not benchmarks)",
+    "source": "IMD case report",
+    "rows": [
+      {
+        "label": "IMD 72 h track error, Asna vs average quoted in case report",
+        "value": "174 km vs 156 km"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "time": "2024-08-29T00:00:00Z",
+      "lat": 23.2,
+      "lon": 70,
+      "observed": {
+        "maxWindKt": 25,
+        "minPressureHpa": 1002
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.015,
+          "dLon": 0.053
+        },
+        "gradeProbs": {
+          "D": 0.7005,
+          "DD": 0.2666,
+          "CS": 0.0329,
+          "SCS": 0,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 25.1,
+              "p10": 19.5,
+              "p90": 31.2
+            },
+            "pressure": {
+              "mean": 1002.2,
+              "p10": 999.1,
+              "p90": 1004.8
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 32.4,
+              "p10": 21.1,
+              "p90": 44.8
+            },
+            "pressure": {
+              "mean": 998.4,
+              "p10": 990.9,
+              "p90": 1004.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 39,
+              "p10": 24.5,
+              "p90": 54.9
+            },
+            "pressure": {
+              "mean": 994.6,
+              "p10": 983.8,
+              "p90": 1002.5
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 30,
+              "p10": 13.6,
+              "p90": 48.1
+            },
+            "pressure": {
+              "mean": 999.7,
+              "p10": 988.7,
+              "p90": 1007
+            }
+          }
+        ],
+        "riProb24h": 0.13,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.2,
+            "lon": 70,
+            "radiusKm": 36,
+            "windKt": 25
+          },
+          {
+            "leadH": 6,
+            "lat": 23.259,
+            "lon": 69.577,
+            "radiusKm": 57,
+            "windKt": 28
+          },
+          {
+            "leadH": 12,
+            "lat": 23.31,
+            "lon": 69.15,
+            "radiusKm": 78,
+            "windKt": 30
+          },
+          {
+            "leadH": 18,
+            "lat": 23.355,
+            "lon": 68.617,
+            "radiusKm": 99,
+            "windKt": 33
+          },
+          {
+            "leadH": 24,
+            "lat": 23.293,
+            "lon": 68.078,
+            "radiusKm": 120,
+            "windKt": 35
+          },
+          {
+            "leadH": 30,
+            "lat": 23.15,
+            "lon": 67.401,
+            "radiusKm": 141,
+            "windKt": 38
+          },
+          {
+            "leadH": 36,
+            "lat": 22.904,
+            "lon": 66.72,
+            "radiusKm": 162,
+            "windKt": 40
+          },
+          {
+            "leadH": 42,
+            "lat": 22.656,
+            "lon": 66.034,
+            "radiusKm": 182,
+            "windKt": 40
+          },
+          {
+            "leadH": 48,
+            "lat": 22.405,
+            "lon": 65.344,
+            "radiusKm": 203,
+            "windKt": 40
+          },
+          {
+            "leadH": 54,
+            "lat": 22.15,
+            "lon": 64.652,
+            "radiusKm": 224,
+            "windKt": 38
+          },
+          {
+            "leadH": 60,
+            "lat": 21.892,
+            "lon": 63.954,
+            "radiusKm": 245,
+            "windKt": 35
+          },
+          {
+            "leadH": 66,
+            "lat": 21.633,
+            "lon": 63.251,
+            "radiusKm": 266,
+            "windKt": 33
+          },
+          {
+            "leadH": 72,
+            "lat": 21.373,
+            "lon": 62.542,
+            "radiusKm": 287,
+            "windKt": 30
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.7
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.76,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 17.8,
+          "units": "kt",
+          "anomaly": 0.96
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.56
+        },
+        "midRH": {
+          "value": 65.5,
+          "units": "%",
+          "anomaly": 0.05
+        },
+        "vorticity": {
+          "value": 14.1,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.15
+        },
+        "divergence": {
+          "value": 4.8,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.38
+        },
+        "steering": {
+          "value": 4.7,
+          "units": "kt",
+          "anomaly": -0.82
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.572,
+            "y": 0.525,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.503,
+            "y": 0.634,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.36,
+            "y": 0.618,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.239,
+            "y": 0.445,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.274,
+            "sst": 0.197,
+            "midRH": 0.11,
+            "vorticity": 0.12,
+            "divergence": 0.144,
+            "steering": 0.155
+          },
+          "ri": {
+            "shear": 0.357,
+            "sst": 0.262,
+            "midRH": 0.188,
+            "vorticity": 0.063,
+            "divergence": 0.086,
+            "steering": 0.044
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 27,
+        "nwpWindKt": 29,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.2,
+            "lon": 70
+          },
+          {
+            "leadH": 6,
+            "lat": 23.21,
+            "lon": 69.44
+          },
+          {
+            "leadH": 12,
+            "lat": 23.22,
+            "lon": 68.879
+          },
+          {
+            "leadH": 18,
+            "lat": 23.23,
+            "lon": 68.219
+          },
+          {
+            "leadH": 24,
+            "lat": 23.14,
+            "lon": 67.559
+          },
+          {
+            "leadH": 30,
+            "lat": 22.991,
+            "lon": 66.827
+          },
+          {
+            "leadH": 36,
+            "lat": 22.742,
+            "lon": 66.095
+          },
+          {
+            "leadH": 42,
+            "lat": 22.494,
+            "lon": 65.363
+          },
+          {
+            "leadH": 48,
+            "lat": 22.245,
+            "lon": 64.631
+          },
+          {
+            "leadH": 54,
+            "lat": 21.991,
+            "lon": 63.896
+          },
+          {
+            "leadH": 60,
+            "lat": 21.737,
+            "lon": 63.161
+          },
+          {
+            "leadH": 66,
+            "lat": 21.484,
+            "lon": 62.426
+          },
+          {
+            "leadH": 72,
+            "lat": 21.23,
+            "lon": 61.692
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-29T06:00:00Z",
+      "lat": 23.3,
+      "lon": 69.5,
+      "observed": {
+        "maxWindKt": 28,
+        "minPressureHpa": 1001
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.085,
+          "dLon": 0.006
+        },
+        "gradeProbs": {
+          "D": 0.4396,
+          "DD": 0.4356,
+          "CS": 0.1248,
+          "SCS": 0,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 28.2,
+              "p10": 22.6,
+              "p90": 34.4
+            },
+            "pressure": {
+              "mean": 1000.7,
+              "p10": 997.3,
+              "p90": 1003.4
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 37.1,
+              "p10": 25.8,
+              "p90": 49.6
+            },
+            "pressure": {
+              "mean": 995.7,
+              "p10": 987.6,
+              "p90": 1001.9
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 35.6,
+              "p10": 21.2,
+              "p90": 51.6
+            },
+            "pressure": {
+              "mean": 996.6,
+              "p10": 986.2,
+              "p90": 1004
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 32.1,
+              "p10": 15.7,
+              "p90": 50.2
+            },
+            "pressure": {
+              "mean": 998.6,
+              "p10": 987.2,
+              "p90": 1006.3
+            }
+          }
+        ],
+        "riProb24h": 0.14,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.3,
+            "lon": 69.5,
+            "radiusKm": 36,
+            "windKt": 28
+          },
+          {
+            "leadH": 6,
+            "lat": 23.441,
+            "lon": 69.078,
+            "radiusKm": 57,
+            "windKt": 30
+          },
+          {
+            "leadH": 12,
+            "lat": 23.574,
+            "lon": 68.56,
+            "radiusKm": 78,
+            "windKt": 33
+          },
+          {
+            "leadH": 18,
+            "lat": 23.599,
+            "lon": 68.046,
+            "radiusKm": 99,
+            "windKt": 35
+          },
+          {
+            "leadH": 24,
+            "lat": 23.516,
+            "lon": 67.435,
+            "radiusKm": 120,
+            "windKt": 38
+          },
+          {
+            "leadH": 30,
+            "lat": 23.313,
+            "lon": 66.787,
+            "radiusKm": 141,
+            "windKt": 40
+          },
+          {
+            "leadH": 36,
+            "lat": 23.106,
+            "lon": 66.139,
+            "radiusKm": 162,
+            "windKt": 40
+          },
+          {
+            "leadH": 42,
+            "lat": 22.893,
+            "lon": 65.491,
+            "radiusKm": 182,
+            "windKt": 40
+          },
+          {
+            "leadH": 48,
+            "lat": 22.676,
+            "lon": 64.843,
+            "radiusKm": 203,
+            "windKt": 38
+          },
+          {
+            "leadH": 54,
+            "lat": 22.454,
+            "lon": 64.198,
+            "radiusKm": 224,
+            "windKt": 35
+          },
+          {
+            "leadH": 60,
+            "lat": 22.227,
+            "lon": 63.553,
+            "radiusKm": 245,
+            "windKt": 33
+          },
+          {
+            "leadH": 66,
+            "lat": 21.995,
+            "lon": 62.905,
+            "radiusKm": 266,
+            "windKt": 30
+          },
+          {
+            "leadH": 72,
+            "lat": 21.758,
+            "lon": 62.356,
+            "radiusKm": 287,
+            "windKt": 28
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.61
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.73,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 16.7,
+          "units": "kt",
+          "anomaly": 0.78
+        },
+        "sst": {
+          "value": 29,
+          "units": "°C",
+          "anomaly": 0.59
+        },
+        "midRH": {
+          "value": 66.4,
+          "units": "%",
+          "anomaly": 0.14
+        },
+        "vorticity": {
+          "value": 14.6,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.07
+        },
+        "divergence": {
+          "value": 5,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.49
+        },
+        "steering": {
+          "value": 4.7,
+          "units": "kt",
+          "anomaly": -0.82
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.575,
+            "y": 0.534,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.521,
+            "y": 0.63,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.341,
+            "y": 0.627,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.234,
+            "y": 0.463,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.256,
+            "sst": 0.201,
+            "midRH": 0.119,
+            "vorticity": 0.112,
+            "divergence": 0.156,
+            "steering": 0.156
+          },
+          "ri": {
+            "shear": 0.333,
+            "sst": 0.268,
+            "midRH": 0.203,
+            "vorticity": 0.061,
+            "divergence": 0.091,
+            "steering": 0.044
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 26,
+        "nwpWindKt": 26,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.3,
+            "lon": 69.5
+          },
+          {
+            "leadH": 6,
+            "lat": 23.302,
+            "lon": 68.956
+          },
+          {
+            "leadH": 12,
+            "lat": 23.305,
+            "lon": 68.313
+          },
+          {
+            "leadH": 18,
+            "lat": 23.207,
+            "lon": 67.669
+          },
+          {
+            "leadH": 24,
+            "lat": 23.009,
+            "lon": 66.926
+          },
+          {
+            "leadH": 30,
+            "lat": 22.756,
+            "lon": 66.202
+          },
+          {
+            "leadH": 36,
+            "lat": 22.503,
+            "lon": 65.479
+          },
+          {
+            "leadH": 42,
+            "lat": 22.25,
+            "lon": 64.756
+          },
+          {
+            "leadH": 48,
+            "lat": 21.997,
+            "lon": 64.033
+          },
+          {
+            "leadH": 54,
+            "lat": 21.739,
+            "lon": 63.308
+          },
+          {
+            "leadH": 60,
+            "lat": 21.481,
+            "lon": 62.582
+          },
+          {
+            "leadH": 66,
+            "lat": 21.222,
+            "lon": 61.857
+          },
+          {
+            "leadH": 72,
+            "lat": 20.964,
+            "lon": 61.232
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-29T12:00:00Z",
+      "lat": 23.4,
+      "lon": 69,
+      "observed": {
+        "maxWindKt": 30,
+        "minPressureHpa": 1000
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.02,
+          "dLon": 0.172
+        },
+        "gradeProbs": {
+          "D": 0.2845,
+          "DD": 0.4873,
+          "CS": 0.2281,
+          "SCS": 0.0001,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 30.1,
+              "p10": 24.6,
+              "p90": 36.3
+            },
+            "pressure": {
+              "mean": 999.7,
+              "p10": 996.2,
+              "p90": 1002.5
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 39.7,
+              "p10": 28.3,
+              "p90": 52.1
+            },
+            "pressure": {
+              "mean": 994.2,
+              "p10": 985.8,
+              "p90": 1000.6
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 35.9,
+              "p10": 21.5,
+              "p90": 51.8
+            },
+            "pressure": {
+              "mean": 996.4,
+              "p10": 986,
+              "p90": 1003.9
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 28.2,
+              "p10": 11.8,
+              "p90": 46.3
+            },
+            "pressure": {
+              "mean": 1000.7,
+              "p10": 989.9,
+              "p90": 1007.6
+            }
+          }
+        ],
+        "riProb24h": 0.13,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.4,
+            "lon": 69,
+            "radiusKm": 36,
+            "windKt": 30
+          },
+          {
+            "leadH": 6,
+            "lat": 23.455,
+            "lon": 68.475,
+            "radiusKm": 57,
+            "windKt": 33
+          },
+          {
+            "leadH": 12,
+            "lat": 23.403,
+            "lon": 67.945,
+            "radiusKm": 78,
+            "windKt": 35
+          },
+          {
+            "leadH": 18,
+            "lat": 23.245,
+            "lon": 67.309,
+            "radiusKm": 99,
+            "windKt": 38
+          },
+          {
+            "leadH": 24,
+            "lat": 22.98,
+            "lon": 66.665,
+            "radiusKm": 120,
+            "windKt": 40
+          },
+          {
+            "leadH": 30,
+            "lat": 22.736,
+            "lon": 65.986,
+            "radiusKm": 141,
+            "windKt": 40
+          },
+          {
+            "leadH": 36,
+            "lat": 22.489,
+            "lon": 65.303,
+            "radiusKm": 162,
+            "windKt": 40
+          },
+          {
+            "leadH": 42,
+            "lat": 22.241,
+            "lon": 64.614,
+            "radiusKm": 182,
+            "windKt": 38
+          },
+          {
+            "leadH": 48,
+            "lat": 21.99,
+            "lon": 63.921,
+            "radiusKm": 203,
+            "windKt": 35
+          },
+          {
+            "leadH": 54,
+            "lat": 21.734,
+            "lon": 63.226,
+            "radiusKm": 224,
+            "windKt": 33
+          },
+          {
+            "leadH": 60,
+            "lat": 21.476,
+            "lon": 62.525,
+            "radiusKm": 245,
+            "windKt": 30
+          },
+          {
+            "leadH": 66,
+            "lat": 21.217,
+            "lon": 61.919,
+            "radiusKm": 266,
+            "windKt": 28
+          },
+          {
+            "leadH": 72,
+            "lat": 20.958,
+            "lon": 61.306,
+            "radiusKm": 287,
+            "windKt": 25
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.8
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.91,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.55,
+          "flag": "interpolated"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.73,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 15.5,
+          "units": "kt",
+          "anomaly": 0.59
+        },
+        "sst": {
+          "value": 28.8,
+          "units": "°C",
+          "anomaly": 0.43
+        },
+        "midRH": {
+          "value": 63.1,
+          "units": "%",
+          "anomaly": -0.19
+        },
+        "vorticity": {
+          "value": 15.3,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.06
+        },
+        "divergence": {
+          "value": 4.3,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.13
+        },
+        "steering": {
+          "value": 5.6,
+          "units": "kt",
+          "anomaly": -0.6
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.576,
+            "y": 0.539,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.499,
+            "y": 0.638,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.363,
+            "y": 0.625,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.229,
+            "y": 0.479,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.262,
+            "sst": 0.203,
+            "midRH": 0.137,
+            "vorticity": 0.122,
+            "divergence": 0.13,
+            "steering": 0.146
+          },
+          "ri": {
+            "shear": 0.326,
+            "sst": 0.262,
+            "midRH": 0.225,
+            "vorticity": 0.065,
+            "divergence": 0.083,
+            "steering": 0.039
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 27,
+        "nwpWindKt": 31,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.4,
+            "lon": 69
+          },
+          {
+            "leadH": 6,
+            "lat": 23.444,
+            "lon": 68.302
+          },
+          {
+            "leadH": 12,
+            "lat": 23.388,
+            "lon": 67.605
+          },
+          {
+            "leadH": 18,
+            "lat": 23.231,
+            "lon": 66.808
+          },
+          {
+            "leadH": 24,
+            "lat": 22.975,
+            "lon": 66.011
+          },
+          {
+            "leadH": 30,
+            "lat": 22.744,
+            "lon": 65.259
+          },
+          {
+            "leadH": 36,
+            "lat": 22.514,
+            "lon": 64.508
+          },
+          {
+            "leadH": 42,
+            "lat": 22.283,
+            "lon": 63.756
+          },
+          {
+            "leadH": 48,
+            "lat": 22.053,
+            "lon": 63.005
+          },
+          {
+            "leadH": 54,
+            "lat": 21.819,
+            "lon": 62.248
+          },
+          {
+            "leadH": 60,
+            "lat": 21.585,
+            "lon": 61.492
+          },
+          {
+            "leadH": 66,
+            "lat": 21.351,
+            "lon": 60.836
+          },
+          {
+            "leadH": 72,
+            "lat": 21.118,
+            "lon": 60.179
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-29T18:00:00Z",
+      "lat": 23.5,
+      "lon": 68.4,
+      "observed": {
+        "maxWindKt": 33,
+        "minPressureHpa": 998
+      },
+      "predicted": {
+        "centre": {
+          "dLat": -0.1,
+          "dLon": 0.068
+        },
+        "gradeProbs": {
+          "D": 0.1184,
+          "DD": 0.4339,
+          "CS": 0.447,
+          "SCS": 0.0007,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 32.9,
+              "p10": 27.3,
+              "p90": 39
+            },
+            "pressure": {
+              "mean": 998.2,
+              "p10": 994.6,
+              "p90": 1001.2
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 43.4,
+              "p10": 32,
+              "p90": 55.8
+            },
+            "pressure": {
+              "mean": 991.8,
+              "p10": 983.1,
+              "p90": 998.6
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 28.3,
+              "p10": 13.8,
+              "p90": 44.2
+            },
+            "pressure": {
+              "mean": 1000.7,
+              "p10": 991.3,
+              "p90": 1006.9
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 26.6,
+              "p10": 10.2,
+              "p90": 44.6
+            },
+            "pressure": {
+              "mean": 1001.5,
+              "p10": 991,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.1,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.5,
+            "lon": 68.4,
+            "radiusKm": 36,
+            "windKt": 33
+          },
+          {
+            "leadH": 6,
+            "lat": 23.554,
+            "lon": 67.868,
+            "radiusKm": 57,
+            "windKt": 35
+          },
+          {
+            "leadH": 12,
+            "lat": 23.501,
+            "lon": 67.241,
+            "radiusKm": 78,
+            "windKt": 38
+          },
+          {
+            "leadH": 18,
+            "lat": 23.341,
+            "lon": 66.62,
+            "radiusKm": 99,
+            "windKt": 40
+          },
+          {
+            "leadH": 24,
+            "lat": 23.174,
+            "lon": 66.003,
+            "radiusKm": 120,
+            "windKt": 40
+          },
+          {
+            "leadH": 30,
+            "lat": 22.98,
+            "lon": 65.355,
+            "radiusKm": 141,
+            "windKt": 40
+          },
+          {
+            "leadH": 36,
+            "lat": 22.782,
+            "lon": 64.707,
+            "radiusKm": 162,
+            "windKt": 38
+          },
+          {
+            "leadH": 42,
+            "lat": 22.58,
+            "lon": 64.061,
+            "radiusKm": 182,
+            "windKt": 35
+          },
+          {
+            "leadH": 48,
+            "lat": 22.372,
+            "lon": 63.415,
+            "radiusKm": 203,
+            "windKt": 33
+          },
+          {
+            "leadH": 54,
+            "lat": 22.161,
+            "lon": 62.774,
+            "radiusKm": 224,
+            "windKt": 30
+          },
+          {
+            "leadH": 60,
+            "lat": 21.945,
+            "lon": 62.233,
+            "radiusKm": 245,
+            "windKt": 28
+          },
+          {
+            "leadH": 66,
+            "lat": 21.723,
+            "lon": 61.691,
+            "radiusKm": 266,
+            "windKt": 25
+          },
+          {
+            "leadH": 72,
+            "lat": 21.596,
+            "lon": 61.249,
+            "radiusKm": 287,
+            "windKt": 22
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.6
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.91,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.93,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 16.2,
+          "units": "kt",
+          "anomaly": 0.71
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.53
+        },
+        "midRH": {
+          "value": 64.7,
+          "units": "%",
+          "anomaly": -0.03
+        },
+        "vorticity": {
+          "value": 16.6,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.26
+        },
+        "divergence": {
+          "value": 4.5,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.25
+        },
+        "steering": {
+          "value": 5.5,
+          "units": "kt",
+          "anomaly": -0.62
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.56,
+            "y": 0.56,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.498,
+            "y": 0.635,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.356,
+            "y": 0.626,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.254,
+            "y": 0.439,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.261,
+            "sst": 0.206,
+            "midRH": 0.114,
+            "vorticity": 0.139,
+            "divergence": 0.138,
+            "steering": 0.142
+          },
+          "ri": {
+            "shear": 0.337,
+            "sst": 0.272,
+            "midRH": 0.195,
+            "vorticity": 0.071,
+            "divergence": 0.086,
+            "steering": 0.039
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 33,
+        "nwpWindKt": 31,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.5,
+            "lon": 68.4
+          },
+          {
+            "leadH": 6,
+            "lat": 23.396,
+            "lon": 67.779
+          },
+          {
+            "leadH": 12,
+            "lat": 23.192,
+            "lon": 67.058
+          },
+          {
+            "leadH": 18,
+            "lat": 22.889,
+            "lon": 66.337
+          },
+          {
+            "leadH": 24,
+            "lat": 22.585,
+            "lon": 65.616
+          },
+          {
+            "leadH": 30,
+            "lat": 22.328,
+            "lon": 64.905
+          },
+          {
+            "leadH": 36,
+            "lat": 22.072,
+            "lon": 64.193
+          },
+          {
+            "leadH": 42,
+            "lat": 21.816,
+            "lon": 63.482
+          },
+          {
+            "leadH": 48,
+            "lat": 21.56,
+            "lon": 62.771
+          },
+          {
+            "leadH": 54,
+            "lat": 21.298,
+            "lon": 62.059
+          },
+          {
+            "leadH": 60,
+            "lat": 21.036,
+            "lon": 61.447
+          },
+          {
+            "leadH": 66,
+            "lat": 20.774,
+            "lon": 60.834
+          },
+          {
+            "leadH": 72,
+            "lat": 20.612,
+            "lon": 60.322
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-30T00:00:00Z",
+      "lat": 23.5,
+      "lon": 67.8,
+      "observed": {
+        "maxWindKt": 35,
+        "minPressureHpa": 997
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.061,
+          "dLon": -0.166
+        },
+        "gradeProbs": {
+          "D": 0.0574,
+          "DD": 0.3389,
+          "CS": 0.6012,
+          "SCS": 0.0025,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 34.7,
+              "p10": 29.1,
+              "p90": 40.8
+            },
+            "pressure": {
+              "mean": 997.2,
+              "p10": 993.5,
+              "p90": 1000.2
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 41.3,
+              "p10": 30,
+              "p90": 53.8
+            },
+            "pressure": {
+              "mean": 993.1,
+              "p10": 984.6,
+              "p90": 999.7
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 34.3,
+              "p10": 19.8,
+              "p90": 50.2
+            },
+            "pressure": {
+              "mean": 997.4,
+              "p10": 987.2,
+              "p90": 1004.6
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 20.8,
+              "p10": 10,
+              "p90": 38.9
+            },
+            "pressure": {
+              "mean": 1004.2,
+              "p10": 994.6,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.07,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.5,
+            "lon": 67.8,
+            "radiusKm": 36,
+            "windKt": 35
+          },
+          {
+            "leadH": 6,
+            "lat": 23.423,
+            "lon": 67.014,
+            "radiusKm": 57,
+            "windKt": 38
+          },
+          {
+            "leadH": 12,
+            "lat": 23.254,
+            "lon": 66.231,
+            "radiusKm": 78,
+            "windKt": 40
+          },
+          {
+            "leadH": 18,
+            "lat": 23.092,
+            "lon": 65.452,
+            "radiusKm": 99,
+            "windKt": 40
+          },
+          {
+            "leadH": 24,
+            "lat": 22.939,
+            "lon": 64.677,
+            "radiusKm": 120,
+            "windKt": 40
+          },
+          {
+            "leadH": 30,
+            "lat": 22.775,
+            "lon": 63.943,
+            "radiusKm": 141,
+            "windKt": 38
+          },
+          {
+            "leadH": 36,
+            "lat": 22.615,
+            "lon": 63.212,
+            "radiusKm": 162,
+            "windKt": 35
+          },
+          {
+            "leadH": 42,
+            "lat": 22.458,
+            "lon": 62.486,
+            "radiusKm": 182,
+            "windKt": 33
+          },
+          {
+            "leadH": 48,
+            "lat": 22.305,
+            "lon": 61.763,
+            "radiusKm": 203,
+            "windKt": 30
+          },
+          {
+            "leadH": 54,
+            "lat": 22.157,
+            "lon": 61.141,
+            "radiusKm": 224,
+            "windKt": 28
+          },
+          {
+            "leadH": 60,
+            "lat": 22.012,
+            "lon": 60.523,
+            "radiusKm": 245,
+            "windKt": 25
+          },
+          {
+            "leadH": 66,
+            "lat": 21.97,
+            "lon": 60.011,
+            "radiusKm": 266,
+            "windKt": 22
+          },
+          {
+            "leadH": 72,
+            "lat": 21.93,
+            "lon": 59.504,
+            "radiusKm": 287,
+            "windKt": 18
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "CDO",
+          "prob": 0.77
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.93,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 16.9,
+          "units": "kt",
+          "anomaly": 0.82
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.51
+        },
+        "midRH": {
+          "value": 59.5,
+          "units": "%",
+          "anomaly": -0.55
+        },
+        "vorticity": {
+          "value": 17,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.34
+        },
+        "divergence": {
+          "value": 4.5,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.27
+        },
+        "steering": {
+          "value": 6.5,
+          "units": "kt",
+          "anomaly": -0.37
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.502,
+            "y": 0.501,
+            "radius": 0.14,
+            "weight": 1
+          },
+          {
+            "x": 0.655,
+            "y": 0.412,
+            "radius": 0.08,
+            "weight": 0.55
+          },
+          {
+            "x": 0.376,
+            "y": 0.649,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.261,
+            "sst": 0.193,
+            "midRH": 0.163,
+            "vorticity": 0.141,
+            "divergence": 0.133,
+            "steering": 0.109
+          },
+          "ri": {
+            "shear": 0.325,
+            "sst": 0.247,
+            "midRH": 0.253,
+            "vorticity": 0.068,
+            "divergence": 0.08,
+            "steering": 0.027
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 46,
+        "nwpWindKt": 34,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.5,
+            "lon": 67.8
+          },
+          {
+            "leadH": 6,
+            "lat": 23.483,
+            "lon": 67.171
+          },
+          {
+            "leadH": 12,
+            "lat": 23.366,
+            "lon": 66.542
+          },
+          {
+            "leadH": 18,
+            "lat": 23.249,
+            "lon": 65.913
+          },
+          {
+            "leadH": 24,
+            "lat": 23.132,
+            "lon": 65.284
+          },
+          {
+            "leadH": 30,
+            "lat": 22.977,
+            "lon": 64.622
+          },
+          {
+            "leadH": 36,
+            "lat": 22.821,
+            "lon": 63.96
+          },
+          {
+            "leadH": 42,
+            "lat": 22.666,
+            "lon": 63.298
+          },
+          {
+            "leadH": 48,
+            "lat": 22.511,
+            "lon": 62.636
+          },
+          {
+            "leadH": 54,
+            "lat": 22.361,
+            "lon": 62.078
+          },
+          {
+            "leadH": 60,
+            "lat": 22.21,
+            "lon": 61.52
+          },
+          {
+            "leadH": 66,
+            "lat": 22.159,
+            "lon": 61.062
+          },
+          {
+            "leadH": 72,
+            "lat": 22.109,
+            "lon": 60.604
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-30T06:00:00Z",
+      "lat": 23.4,
+      "lon": 67.1,
+      "observed": {
+        "maxWindKt": 38,
+        "minPressureHpa": 995
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.115,
+          "dLon": 0.14
+        },
+        "gradeProbs": {
+          "D": 0.0134,
+          "DD": 0.1674,
+          "CS": 0.8026,
+          "SCS": 0.0166,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 37.7,
+              "p10": 32.1,
+              "p90": 43.9
+            },
+            "pressure": {
+              "mean": 995.4,
+              "p10": 991.5,
+              "p90": 998.6
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 39.2,
+              "p10": 27.9,
+              "p90": 51.7
+            },
+            "pressure": {
+              "mean": 994.4,
+              "p10": 986.1,
+              "p90": 1000.8
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 23.4,
+              "p10": 10,
+              "p90": 39.3
+            },
+            "pressure": {
+              "mean": 1003,
+              "p10": 994.4,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.4,
+            "lon": 67.1,
+            "radiusKm": 36,
+            "windKt": 38
+          },
+          {
+            "leadH": 6,
+            "lat": 23.238,
+            "lon": 66.32,
+            "radiusKm": 57,
+            "windKt": 40
+          },
+          {
+            "leadH": 12,
+            "lat": 23.083,
+            "lon": 65.546,
+            "radiusKm": 78,
+            "windKt": 40
+          },
+          {
+            "leadH": 18,
+            "lat": 22.935,
+            "lon": 64.776,
+            "radiusKm": 99,
+            "windKt": 40
+          },
+          {
+            "leadH": 24,
+            "lat": 22.794,
+            "lon": 64.012,
+            "radiusKm": 120,
+            "windKt": 38
+          },
+          {
+            "leadH": 30,
+            "lat": 22.636,
+            "lon": 63.287,
+            "radiusKm": 141,
+            "windKt": 35
+          },
+          {
+            "leadH": 36,
+            "lat": 22.48,
+            "lon": 62.565,
+            "radiusKm": 162,
+            "windKt": 33
+          },
+          {
+            "leadH": 42,
+            "lat": 22.328,
+            "lon": 61.848,
+            "radiusKm": 182,
+            "windKt": 30
+          },
+          {
+            "leadH": 48,
+            "lat": 22.177,
+            "lon": 61.236,
+            "radiusKm": 203,
+            "windKt": 28
+          },
+          {
+            "leadH": 54,
+            "lat": 22.033,
+            "lon": 60.625,
+            "radiusKm": 224,
+            "windKt": 25
+          },
+          {
+            "leadH": 60,
+            "lat": 21.99,
+            "lon": 60.119,
+            "radiusKm": 245,
+            "windKt": 22
+          },
+          {
+            "leadH": 66,
+            "lat": 21.949,
+            "lon": 59.618,
+            "radiusKm": 266,
+            "windKt": 18
+          },
+          {
+            "leadH": 72,
+            "lat": 21.91,
+            "lon": 59.124,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "CDO",
+          "prob": 0.75
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.98,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 19.1,
+          "units": "kt",
+          "anomaly": 1.19
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.55
+        },
+        "midRH": {
+          "value": 60.2,
+          "units": "%",
+          "anomaly": -0.48
+        },
+        "vorticity": {
+          "value": 19.1,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.68
+        },
+        "divergence": {
+          "value": 3.5,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.27
+        },
+        "steering": {
+          "value": 6.7,
+          "units": "kt",
+          "anomaly": -0.32
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.491,
+            "y": 0.52,
+            "radius": 0.14,
+            "weight": 1
+          },
+          {
+            "x": 0.646,
+            "y": 0.418,
+            "radius": 0.08,
+            "weight": 0.55
+          },
+          {
+            "x": 0.36,
+            "y": 0.625,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.282,
+            "sst": 0.185,
+            "midRH": 0.146,
+            "vorticity": 0.165,
+            "divergence": 0.125,
+            "steering": 0.097
+          },
+          "ri": {
+            "shear": 0.356,
+            "sst": 0.239,
+            "midRH": 0.23,
+            "vorticity": 0.076,
+            "divergence": 0.075,
+            "steering": 0.024
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 36,
+        "nwpWindKt": 38,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.4,
+            "lon": 67.1
+          },
+          {
+            "leadH": 6,
+            "lat": 23.249,
+            "lon": 66.502
+          },
+          {
+            "leadH": 12,
+            "lat": 23.099,
+            "lon": 65.903
+          },
+          {
+            "leadH": 18,
+            "lat": 22.948,
+            "lon": 65.304
+          },
+          {
+            "leadH": 24,
+            "lat": 22.797,
+            "lon": 64.705
+          },
+          {
+            "leadH": 30,
+            "lat": 22.624,
+            "lon": 64.059
+          },
+          {
+            "leadH": 36,
+            "lat": 22.45,
+            "lon": 63.414
+          },
+          {
+            "leadH": 42,
+            "lat": 22.277,
+            "lon": 62.768
+          },
+          {
+            "leadH": 48,
+            "lat": 22.103,
+            "lon": 62.221
+          },
+          {
+            "leadH": 54,
+            "lat": 21.933,
+            "lon": 61.681
+          },
+          {
+            "leadH": 60,
+            "lat": 21.862,
+            "lon": 61.241
+          },
+          {
+            "leadH": 66,
+            "lat": 21.791,
+            "lon": 60.8
+          },
+          {
+            "leadH": 72,
+            "lat": 21.72,
+            "lon": 60.36
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-30T12:00:00Z",
+      "lat": 23.2,
+      "lon": 66.4,
+      "observed": {
+        "maxWindKt": 40,
+        "minPressureHpa": 994
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.16,
+          "dLon": 0.053
+        },
+        "gradeProbs": {
+          "D": 0.0021,
+          "DD": 0.0568,
+          "CS": 0.8713,
+          "SCS": 0.0698,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 40.7,
+              "p10": 35.1,
+              "p90": 46.9
+            },
+            "pressure": {
+              "mean": 993.5,
+              "p10": 989.5,
+              "p90": 996.9
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 33.4,
+              "p10": 22.1,
+              "p90": 45.9
+            },
+            "pressure": {
+              "mean": 997.9,
+              "p10": 990.2,
+              "p90": 1003.6
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 23.8,
+              "p10": 10,
+              "p90": 39.7
+            },
+            "pressure": {
+              "mean": 1002.8,
+              "p10": 994.1,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 16.1,
+              "p10": 10,
+              "p90": 34.1
+            },
+            "pressure": {
+              "mean": 1006.1,
+              "p10": 997.5,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23.2,
+            "lon": 66.4,
+            "radiusKm": 36,
+            "windKt": 40
+          },
+          {
+            "leadH": 6,
+            "lat": 22.952,
+            "lon": 65.627,
+            "radiusKm": 57,
+            "windKt": 40
+          },
+          {
+            "leadH": 12,
+            "lat": 22.711,
+            "lon": 64.85,
+            "radiusKm": 78,
+            "windKt": 40
+          },
+          {
+            "leadH": 18,
+            "lat": 22.478,
+            "lon": 64.068,
+            "radiusKm": 99,
+            "windKt": 38
+          },
+          {
+            "leadH": 24,
+            "lat": 22.252,
+            "lon": 63.283,
+            "radiusKm": 120,
+            "windKt": 35
+          },
+          {
+            "leadH": 30,
+            "lat": 22.05,
+            "lon": 62.531,
+            "radiusKm": 141,
+            "windKt": 33
+          },
+          {
+            "leadH": 36,
+            "lat": 21.852,
+            "lon": 61.779,
+            "radiusKm": 162,
+            "windKt": 30
+          },
+          {
+            "leadH": 42,
+            "lat": 21.659,
+            "lon": 61.126,
+            "radiusKm": 182,
+            "windKt": 28
+          },
+          {
+            "leadH": 48,
+            "lat": 21.471,
+            "lon": 60.473,
+            "radiusKm": 203,
+            "windKt": 25
+          },
+          {
+            "leadH": 54,
+            "lat": 21.387,
+            "lon": 59.915,
+            "radiusKm": 224,
+            "windKt": 22
+          },
+          {
+            "leadH": 60,
+            "lat": 21.308,
+            "lon": 59.358,
+            "radiusKm": 245,
+            "windKt": 18
+          },
+          {
+            "leadH": 66,
+            "lat": 21.235,
+            "lon": 58.802,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 21.166,
+            "lon": 58.247,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "CDO",
+          "prob": 0.77
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.93,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 17.4,
+          "units": "kt",
+          "anomaly": 0.9
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.51
+        },
+        "midRH": {
+          "value": 56.4,
+          "units": "%",
+          "anomaly": -0.86
+        },
+        "vorticity": {
+          "value": 19.6,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.76
+        },
+        "divergence": {
+          "value": 3.1,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.46
+        },
+        "steering": {
+          "value": 6.7,
+          "units": "kt",
+          "anomaly": -0.31
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.504,
+            "y": 0.491,
+            "radius": 0.14,
+            "weight": 1
+          },
+          {
+            "x": 0.663,
+            "y": 0.39,
+            "radius": 0.08,
+            "weight": 0.55
+          },
+          {
+            "x": 0.345,
+            "y": 0.624,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.246,
+            "sst": 0.176,
+            "midRH": 0.178,
+            "vorticity": 0.168,
+            "divergence": 0.139,
+            "steering": 0.093
+          },
+          "ri": {
+            "shear": 0.314,
+            "sst": 0.23,
+            "midRH": 0.276,
+            "vorticity": 0.077,
+            "divergence": 0.08,
+            "steering": 0.023
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 41,
+        "nwpWindKt": 39,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23.2,
+            "lon": 66.4
+          },
+          {
+            "leadH": 6,
+            "lat": 23.106,
+            "lon": 65.701
+          },
+          {
+            "leadH": 12,
+            "lat": 23.011,
+            "lon": 65.002
+          },
+          {
+            "leadH": 18,
+            "lat": 22.917,
+            "lon": 64.303
+          },
+          {
+            "leadH": 24,
+            "lat": 22.822,
+            "lon": 63.603
+          },
+          {
+            "leadH": 30,
+            "lat": 22.68,
+            "lon": 62.904
+          },
+          {
+            "leadH": 36,
+            "lat": 22.537,
+            "lon": 62.204
+          },
+          {
+            "leadH": 42,
+            "lat": 22.394,
+            "lon": 61.605
+          },
+          {
+            "leadH": 48,
+            "lat": 22.251,
+            "lon": 61.005
+          },
+          {
+            "leadH": 54,
+            "lat": 22.214,
+            "lon": 60.506
+          },
+          {
+            "leadH": 60,
+            "lat": 22.177,
+            "lon": 60.006
+          },
+          {
+            "leadH": 66,
+            "lat": 22.141,
+            "lon": 59.507
+          },
+          {
+            "leadH": 72,
+            "lat": 22.104,
+            "lon": 59.007
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-30T18:00:00Z",
+      "lat": 23,
+      "lon": 65.7,
+      "observed": {
+        "maxWindKt": 40,
+        "minPressureHpa": 994
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.067,
+          "dLon": -0.156
+        },
+        "gradeProbs": {
+          "D": 0.0027,
+          "DD": 0.0684,
+          "CS": 0.874,
+          "SCS": 0.0549,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 40.2,
+              "p10": 34.6,
+              "p90": 46.3
+            },
+            "pressure": {
+              "mean": 993.8,
+              "p10": 989.9,
+              "p90": 997.2
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 32,
+              "p10": 20.7,
+              "p90": 44.5
+            },
+            "pressure": {
+              "mean": 998.7,
+              "p10": 991.1,
+              "p90": 1004.2
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 23.8,
+              "p10": 10,
+              "p90": 39.7
+            },
+            "pressure": {
+              "mean": 1002.8,
+              "p10": 994.2,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.02,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 23,
+            "lon": 65.7,
+            "radiusKm": 36,
+            "windKt": 40
+          },
+          {
+            "leadH": 6,
+            "lat": 22.733,
+            "lon": 64.948,
+            "radiusKm": 57,
+            "windKt": 40
+          },
+          {
+            "leadH": 12,
+            "lat": 22.471,
+            "lon": 64.19,
+            "radiusKm": 78,
+            "windKt": 38
+          },
+          {
+            "leadH": 18,
+            "lat": 22.215,
+            "lon": 63.424,
+            "radiusKm": 99,
+            "windKt": 35
+          },
+          {
+            "leadH": 24,
+            "lat": 21.965,
+            "lon": 62.652,
+            "radiusKm": 120,
+            "windKt": 33
+          },
+          {
+            "leadH": 30,
+            "lat": 21.747,
+            "lon": 61.904,
+            "radiusKm": 141,
+            "windKt": 30
+          },
+          {
+            "leadH": 36,
+            "lat": 21.534,
+            "lon": 61.254,
+            "radiusKm": 162,
+            "windKt": 28
+          },
+          {
+            "leadH": 42,
+            "lat": 21.324,
+            "lon": 60.602,
+            "radiusKm": 182,
+            "windKt": 25
+          },
+          {
+            "leadH": 48,
+            "lat": 21.219,
+            "lon": 60.047,
+            "radiusKm": 203,
+            "windKt": 22
+          },
+          {
+            "leadH": 54,
+            "lat": 21.117,
+            "lon": 59.487,
+            "radiusKm": 224,
+            "windKt": 18
+          },
+          {
+            "leadH": 60,
+            "lat": 21.019,
+            "lon": 58.926,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.927,
+            "lon": 58.363,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.84,
+            "lon": 57.801,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "CDO",
+          "prob": 0.56
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.95,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.91,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 18,
+          "units": "kt",
+          "anomaly": 1
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.5
+        },
+        "midRH": {
+          "value": 57.9,
+          "units": "%",
+          "anomaly": -0.71
+        },
+        "vorticity": {
+          "value": 18.7,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.62
+        },
+        "divergence": {
+          "value": 3.4,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.32
+        },
+        "steering": {
+          "value": 6.8,
+          "units": "kt",
+          "anomaly": -0.31
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.518,
+            "y": 0.484,
+            "radius": 0.14,
+            "weight": 1
+          },
+          {
+            "x": 0.67,
+            "y": 0.396,
+            "radius": 0.08,
+            "weight": 0.55
+          },
+          {
+            "x": 0.369,
+            "y": 0.655,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.264,
+            "sst": 0.181,
+            "midRH": 0.169,
+            "vorticity": 0.16,
+            "divergence": 0.13,
+            "steering": 0.096
+          },
+          "ri": {
+            "shear": 0.331,
+            "sst": 0.233,
+            "midRH": 0.261,
+            "vorticity": 0.074,
+            "divergence": 0.077,
+            "steering": 0.024
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 38,
+        "nwpWindKt": 37,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 23,
+            "lon": 65.7
+          },
+          {
+            "leadH": 6,
+            "lat": 22.867,
+            "lon": 64.911
+          },
+          {
+            "leadH": 12,
+            "lat": 22.733,
+            "lon": 64.122
+          },
+          {
+            "leadH": 18,
+            "lat": 22.6,
+            "lon": 63.334
+          },
+          {
+            "leadH": 24,
+            "lat": 22.466,
+            "lon": 62.545
+          },
+          {
+            "leadH": 30,
+            "lat": 22.302,
+            "lon": 61.798
+          },
+          {
+            "leadH": 36,
+            "lat": 22.138,
+            "lon": 61.15
+          },
+          {
+            "leadH": 42,
+            "lat": 21.974,
+            "lon": 60.503
+          },
+          {
+            "leadH": 48,
+            "lat": 21.91,
+            "lon": 59.955
+          },
+          {
+            "leadH": 54,
+            "lat": 21.85,
+            "lon": 59.403
+          },
+          {
+            "leadH": 60,
+            "lat": 21.789,
+            "lon": 58.85
+          },
+          {
+            "leadH": 66,
+            "lat": 21.729,
+            "lon": 58.298
+          },
+          {
+            "leadH": 72,
+            "lat": 21.668,
+            "lon": 57.746
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-31T00:00:00Z",
+      "lat": 22.8,
+      "lon": 65,
+      "observed": {
+        "maxWindKt": 40,
+        "minPressureHpa": 994
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.009,
+          "dLon": 0.014
+        },
+        "gradeProbs": {
+          "D": 0.0027,
+          "DD": 0.0671,
+          "CS": 0.8713,
+          "SCS": 0.0589,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 40.3,
+              "p10": 34.7,
+              "p90": 46.5
+            },
+            "pressure": {
+              "mean": 993.8,
+              "p10": 989.8,
+              "p90": 997.1
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 28.3,
+              "p10": 17,
+              "p90": 40.7
+            },
+            "pressure": {
+              "mean": 1000.6,
+              "p10": 993.5,
+              "p90": 1005.8
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 21.2,
+              "p10": 10,
+              "p90": 37.1
+            },
+            "pressure": {
+              "mean": 1004,
+              "p10": 995.8,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 22.8,
+            "lon": 65,
+            "radiusKm": 36,
+            "windKt": 40
+          },
+          {
+            "leadH": 6,
+            "lat": 22.682,
+            "lon": 64.305,
+            "radiusKm": 57,
+            "windKt": 38
+          },
+          {
+            "leadH": 12,
+            "lat": 22.563,
+            "lon": 63.619,
+            "radiusKm": 78,
+            "windKt": 35
+          },
+          {
+            "leadH": 18,
+            "lat": 22.443,
+            "lon": 62.942,
+            "radiusKm": 99,
+            "windKt": 33
+          },
+          {
+            "leadH": 24,
+            "lat": 22.321,
+            "lon": 62.275,
+            "radiusKm": 120,
+            "windKt": 30
+          },
+          {
+            "leadH": 30,
+            "lat": 22.16,
+            "lon": 61.705,
+            "radiusKm": 141,
+            "windKt": 28
+          },
+          {
+            "leadH": 36,
+            "lat": 21.997,
+            "lon": 61.14,
+            "radiusKm": 162,
+            "windKt": 25
+          },
+          {
+            "leadH": 42,
+            "lat": 21.931,
+            "lon": 60.68,
+            "radiusKm": 182,
+            "windKt": 22
+          },
+          {
+            "leadH": 48,
+            "lat": 21.862,
+            "lon": 60.223,
+            "radiusKm": 203,
+            "windKt": 18
+          },
+          {
+            "leadH": 54,
+            "lat": 21.794,
+            "lon": 59.773,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 21.723,
+            "lon": 59.327,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 21.647,
+            "lon": 58.885,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 21.567,
+            "lon": 58.446,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "sheared",
+          "prob": 0.68
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.89,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.97,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 20.8,
+          "units": "kt",
+          "anomaly": 1.46
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.45
+        },
+        "midRH": {
+          "value": 57.6,
+          "units": "%",
+          "anomaly": -0.74
+        },
+        "vorticity": {
+          "value": 19.1,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.68
+        },
+        "divergence": {
+          "value": 2.3,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.83
+        },
+        "steering": {
+          "value": 6.8,
+          "units": "kt",
+          "anomaly": -0.31
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.614,
+            "y": 0.449,
+            "radius": 0.12,
+            "weight": 0.95
+          },
+          {
+            "x": 0.705,
+            "y": 0.372,
+            "radius": 0.08,
+            "weight": 0.6
+          },
+          {
+            "x": 0.493,
+            "y": 0.539,
+            "radius": 0.05,
+            "weight": 0.35
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.281,
+            "sst": 0.16,
+            "midRH": 0.156,
+            "vorticity": 0.151,
+            "divergence": 0.164,
+            "steering": 0.088
+          },
+          "ri": {
+            "shear": 0.365,
+            "sst": 0.21,
+            "midRH": 0.246,
+            "vorticity": 0.07,
+            "divergence": 0.087,
+            "steering": 0.022
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 37,
+        "nwpWindKt": 37,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 22.8,
+            "lon": 65
+          },
+          {
+            "leadH": 6,
+            "lat": 22.636,
+            "lon": 64.408
+          },
+          {
+            "leadH": 12,
+            "lat": 22.472,
+            "lon": 63.815
+          },
+          {
+            "leadH": 18,
+            "lat": 22.308,
+            "lon": 63.222
+          },
+          {
+            "leadH": 24,
+            "lat": 22.143,
+            "lon": 62.629
+          },
+          {
+            "leadH": 30,
+            "lat": 21.963,
+            "lon": 62.086
+          },
+          {
+            "leadH": 36,
+            "lat": 21.782,
+            "lon": 61.544
+          },
+          {
+            "leadH": 42,
+            "lat": 21.701,
+            "lon": 61.101
+          },
+          {
+            "leadH": 48,
+            "lat": 21.621,
+            "lon": 60.659
+          },
+          {
+            "leadH": 54,
+            "lat": 21.542,
+            "lon": 60.222
+          },
+          {
+            "leadH": 60,
+            "lat": 21.463,
+            "lon": 59.785
+          },
+          {
+            "leadH": 66,
+            "lat": 21.384,
+            "lon": 59.349
+          },
+          {
+            "leadH": 72,
+            "lat": 21.305,
+            "lon": 58.912
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-31T06:00:00Z",
+      "lat": 22.6,
+      "lon": 64.3,
+      "observed": {
+        "maxWindKt": 38,
+        "minPressureHpa": 995
+      },
+      "predicted": {
+        "centre": {
+          "dLat": -0.078,
+          "dLon": -0.076
+        },
+        "gradeProbs": {
+          "D": 0.012,
+          "DD": 0.1611,
+          "CS": 0.8101,
+          "SCS": 0.0168,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 37.8,
+              "p10": 32.2,
+              "p90": 43.9
+            },
+            "pressure": {
+              "mean": 995.3,
+              "p10": 991.5,
+              "p90": 998.6
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 25.9,
+              "p10": 14.6,
+              "p90": 38.4
+            },
+            "pressure": {
+              "mean": 1001.8,
+              "p10": 995,
+              "p90": 1006.6
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 17.3,
+              "p10": 10,
+              "p90": 33.2
+            },
+            "pressure": {
+              "mean": 1005.6,
+              "p10": 998,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 22.6,
+            "lon": 64.3,
+            "radiusKm": 36,
+            "windKt": 38
+          },
+          {
+            "leadH": 6,
+            "lat": 22.361,
+            "lon": 63.522,
+            "radiusKm": 57,
+            "windKt": 35
+          },
+          {
+            "leadH": 12,
+            "lat": 22.129,
+            "lon": 62.74,
+            "radiusKm": 78,
+            "windKt": 33
+          },
+          {
+            "leadH": 18,
+            "lat": 21.906,
+            "lon": 61.955,
+            "radiusKm": 99,
+            "windKt": 30
+          },
+          {
+            "leadH": 24,
+            "lat": 21.69,
+            "lon": 61.267,
+            "radiusKm": 120,
+            "windKt": 28
+          },
+          {
+            "leadH": 30,
+            "lat": 21.494,
+            "lon": 60.616,
+            "radiusKm": 141,
+            "windKt": 25
+          },
+          {
+            "leadH": 36,
+            "lat": 21.402,
+            "lon": 60.064,
+            "radiusKm": 162,
+            "windKt": 22
+          },
+          {
+            "leadH": 42,
+            "lat": 21.315,
+            "lon": 59.512,
+            "radiusKm": 182,
+            "windKt": 18
+          },
+          {
+            "leadH": 48,
+            "lat": 21.233,
+            "lon": 58.961,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 21.155,
+            "lon": 58.406,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 21.083,
+            "lon": 57.852,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 21.016,
+            "lon": 57.3,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.954,
+            "lon": 56.75,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "sheared",
+          "prob": 0.81
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.9,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 20.1,
+          "units": "kt",
+          "anomaly": 1.35
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.54
+        },
+        "midRH": {
+          "value": 57.3,
+          "units": "%",
+          "anomaly": -0.77
+        },
+        "vorticity": {
+          "value": 18.3,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.54
+        },
+        "divergence": {
+          "value": 2.8,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.6
+        },
+        "steering": {
+          "value": 6.8,
+          "units": "kt",
+          "anomaly": -0.31
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.591,
+            "y": 0.442,
+            "radius": 0.12,
+            "weight": 0.95
+          },
+          {
+            "x": 0.696,
+            "y": 0.379,
+            "radius": 0.08,
+            "weight": 0.6
+          },
+          {
+            "x": 0.491,
+            "y": 0.525,
+            "radius": 0.05,
+            "weight": 0.35
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.28,
+            "sst": 0.174,
+            "midRH": 0.164,
+            "vorticity": 0.143,
+            "divergence": 0.148,
+            "steering": 0.091
+          },
+          "ri": {
+            "shear": 0.355,
+            "sst": 0.223,
+            "midRH": 0.252,
+            "vorticity": 0.067,
+            "divergence": 0.081,
+            "steering": 0.022
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 41,
+        "nwpWindKt": 37,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 22.6,
+            "lon": 64.3
+          },
+          {
+            "leadH": 6,
+            "lat": 22.454,
+            "lon": 63.502
+          },
+          {
+            "leadH": 12,
+            "lat": 22.309,
+            "lon": 62.704
+          },
+          {
+            "leadH": 18,
+            "lat": 22.163,
+            "lon": 61.907
+          },
+          {
+            "leadH": 24,
+            "lat": 22.017,
+            "lon": 61.209
+          },
+          {
+            "leadH": 30,
+            "lat": 21.847,
+            "lon": 60.557
+          },
+          {
+            "leadH": 36,
+            "lat": 21.776,
+            "lon": 60.005
+          },
+          {
+            "leadH": 42,
+            "lat": 21.705,
+            "lon": 59.452
+          },
+          {
+            "leadH": 48,
+            "lat": 21.635,
+            "lon": 58.899
+          },
+          {
+            "leadH": 54,
+            "lat": 21.567,
+            "lon": 58.342
+          },
+          {
+            "leadH": 60,
+            "lat": 21.499,
+            "lon": 57.784
+          },
+          {
+            "leadH": 66,
+            "lat": 21.431,
+            "lon": 57.226
+          },
+          {
+            "leadH": 72,
+            "lat": 21.364,
+            "lon": 56.668
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-31T12:00:00Z",
+      "lat": 22.4,
+      "lon": 63.6,
+      "observed": {
+        "maxWindKt": 35,
+        "minPressureHpa": 997
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.003,
+          "dLon": -0.162
+        },
+        "gradeProbs": {
+          "D": 0.0458,
+          "DD": 0.309,
+          "CS": 0.6417,
+          "SCS": 0.0035,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 35.2,
+              "p10": 29.6,
+              "p90": 41.3
+            },
+            "pressure": {
+              "mean": 996.9,
+              "p10": 993.1,
+              "p90": 1000
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 24.7,
+              "p10": 13.4,
+              "p90": 37.2
+            },
+            "pressure": {
+              "mean": 1002.4,
+              "p10": 995.7,
+              "p90": 1007.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 30.9
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 999.3,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 17.8,
+              "p10": 10,
+              "p90": 35.8
+            },
+            "pressure": {
+              "mean": 1005.5,
+              "p10": 996.5,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 22.4,
+            "lon": 63.6,
+            "radiusKm": 36,
+            "windKt": 35
+          },
+          {
+            "leadH": 6,
+            "lat": 22.146,
+            "lon": 62.833,
+            "radiusKm": 57,
+            "windKt": 33
+          },
+          {
+            "leadH": 12,
+            "lat": 21.9,
+            "lon": 62.06,
+            "radiusKm": 78,
+            "windKt": 30
+          },
+          {
+            "leadH": 18,
+            "lat": 21.66,
+            "lon": 61.382,
+            "radiusKm": 99,
+            "windKt": 28
+          },
+          {
+            "leadH": 24,
+            "lat": 21.427,
+            "lon": 60.7,
+            "radiusKm": 120,
+            "windKt": 25
+          },
+          {
+            "leadH": 30,
+            "lat": 21.321,
+            "lon": 60.149,
+            "radiusKm": 141,
+            "windKt": 22
+          },
+          {
+            "leadH": 36,
+            "lat": 21.219,
+            "lon": 59.596,
+            "radiusKm": 162,
+            "windKt": 18
+          },
+          {
+            "leadH": 42,
+            "lat": 21.121,
+            "lon": 59.043,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 21.029,
+            "lon": 58.489,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 20.94,
+            "lon": 57.93,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 20.856,
+            "lon": 57.371,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.778,
+            "lon": 56.813,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.705,
+            "lon": 56.255,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "CDO",
+          "prob": 0.68
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.89,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.95,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 19.8,
+          "units": "kt",
+          "anomaly": 1.31
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.49
+        },
+        "midRH": {
+          "value": 55.9,
+          "units": "%",
+          "anomaly": -0.91
+        },
+        "vorticity": {
+          "value": 16.7,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.29
+        },
+        "divergence": {
+          "value": 2.6,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.72
+        },
+        "steering": {
+          "value": 6.8,
+          "units": "kt",
+          "anomaly": -0.3
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.482,
+            "y": 0.489,
+            "radius": 0.14,
+            "weight": 1
+          },
+          {
+            "x": 0.655,
+            "y": 0.394,
+            "radius": 0.08,
+            "weight": 0.55
+          },
+          {
+            "x": 0.377,
+            "y": 0.649,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.278,
+            "sst": 0.171,
+            "midRH": 0.179,
+            "vorticity": 0.121,
+            "divergence": 0.161,
+            "steering": 0.09
+          },
+          "ri": {
+            "shear": 0.349,
+            "sst": 0.216,
+            "midRH": 0.269,
+            "vorticity": 0.059,
+            "divergence": 0.085,
+            "steering": 0.022
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 31,
+        "nwpWindKt": 38,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 22.4,
+            "lon": 63.6
+          },
+          {
+            "leadH": 6,
+            "lat": 22.272,
+            "lon": 62.817
+          },
+          {
+            "leadH": 12,
+            "lat": 22.145,
+            "lon": 62.034
+          },
+          {
+            "leadH": 18,
+            "lat": 22.017,
+            "lon": 61.351
+          },
+          {
+            "leadH": 24,
+            "lat": 21.889,
+            "lon": 60.669
+          },
+          {
+            "leadH": 30,
+            "lat": 21.828,
+            "lon": 60.124
+          },
+          {
+            "leadH": 36,
+            "lat": 21.768,
+            "lon": 59.579
+          },
+          {
+            "leadH": 42,
+            "lat": 21.707,
+            "lon": 59.034
+          },
+          {
+            "leadH": 48,
+            "lat": 21.646,
+            "lon": 58.49
+          },
+          {
+            "leadH": 54,
+            "lat": 21.589,
+            "lon": 57.941
+          },
+          {
+            "leadH": 60,
+            "lat": 21.532,
+            "lon": 57.391
+          },
+          {
+            "leadH": 66,
+            "lat": 21.475,
+            "lon": 56.842
+          },
+          {
+            "leadH": 72,
+            "lat": 21.418,
+            "lon": 56.293
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-08-31T18:00:00Z",
+      "lat": 22.2,
+      "lon": 62.9,
+      "observed": {
+        "maxWindKt": 33,
+        "minPressureHpa": 998
+      },
+      "predicted": {
+        "centre": {
+          "dLat": -0.135,
+          "dLon": -0.152
+        },
+        "gradeProbs": {
+          "D": 0.1119,
+          "DD": 0.4227,
+          "CS": 0.4645,
+          "SCS": 0.0009,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 33.1,
+              "p10": 27.5,
+              "p90": 39.3
+            },
+            "pressure": {
+              "mean": 998,
+              "p10": 994.4,
+              "p90": 1001
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 18.6,
+              "p10": 10,
+              "p90": 31.1
+            },
+            "pressure": {
+              "mean": 1005.1,
+              "p10": 999.2,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 15.2,
+              "p10": 10,
+              "p90": 31.1
+            },
+            "pressure": {
+              "mean": 1006.4,
+              "p10": 999.2,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 22.2,
+            "lon": 62.9,
+            "radiusKm": 36,
+            "windKt": 33
+          },
+          {
+            "leadH": 6,
+            "lat": 22.073,
+            "lon": 62.159,
+            "radiusKm": 57,
+            "windKt": 30
+          },
+          {
+            "leadH": 12,
+            "lat": 21.949,
+            "lon": 61.527,
+            "radiusKm": 78,
+            "windKt": 28
+          },
+          {
+            "leadH": 18,
+            "lat": 21.829,
+            "lon": 60.903,
+            "radiusKm": 99,
+            "windKt": 25
+          },
+          {
+            "leadH": 24,
+            "lat": 21.812,
+            "lon": 60.388,
+            "radiusKm": 120,
+            "windKt": 22
+          },
+          {
+            "leadH": 30,
+            "lat": 21.759,
+            "lon": 59.893,
+            "radiusKm": 141,
+            "windKt": 18
+          },
+          {
+            "leadH": 36,
+            "lat": 21.708,
+            "lon": 59.403,
+            "radiusKm": 162,
+            "windKt": 15
+          },
+          {
+            "leadH": 42,
+            "lat": 21.656,
+            "lon": 58.918,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 21.603,
+            "lon": 58.438,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 21.555,
+            "lon": 57.963,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 21.505,
+            "lon": 57.494,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 21.453,
+            "lon": 57.03,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 21.4,
+            "lon": 56.572,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "sheared",
+          "prob": 0.58
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.88,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 21,
+          "units": "kt",
+          "anomaly": 1.5
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.53
+        },
+        "midRH": {
+          "value": 54.3,
+          "units": "%",
+          "anomaly": -1.07
+        },
+        "vorticity": {
+          "value": 17.3,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.38
+        },
+        "divergence": {
+          "value": 2,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -1
+        },
+        "steering": {
+          "value": 6.8,
+          "units": "kt",
+          "anomaly": -0.3
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.582,
+            "y": 0.452,
+            "radius": 0.12,
+            "weight": 0.95
+          },
+          {
+            "x": 0.684,
+            "y": 0.37,
+            "radius": 0.08,
+            "weight": 0.6
+          },
+          {
+            "x": 0.482,
+            "y": 0.526,
+            "radius": 0.05,
+            "weight": 0.35
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.276,
+            "sst": 0.163,
+            "midRH": 0.181,
+            "vorticity": 0.121,
+            "divergence": 0.175,
+            "steering": 0.084
+          },
+          "ri": {
+            "shear": 0.352,
+            "sst": 0.209,
+            "midRH": 0.272,
+            "vorticity": 0.058,
+            "divergence": 0.088,
+            "steering": 0.021
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 36,
+        "nwpWindKt": 37,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 22.2,
+            "lon": 62.9
+          },
+          {
+            "leadH": 6,
+            "lat": 21.973,
+            "lon": 62.31
+          },
+          {
+            "leadH": 12,
+            "lat": 21.746,
+            "lon": 61.82
+          },
+          {
+            "leadH": 18,
+            "lat": 21.518,
+            "lon": 61.329
+          },
+          {
+            "leadH": 24,
+            "lat": 21.391,
+            "lon": 60.939
+          },
+          {
+            "leadH": 30,
+            "lat": 21.276,
+            "lon": 60.498
+          },
+          {
+            "leadH": 36,
+            "lat": 21.161,
+            "lon": 60.057
+          },
+          {
+            "leadH": 42,
+            "lat": 21.047,
+            "lon": 59.615
+          },
+          {
+            "leadH": 48,
+            "lat": 20.932,
+            "lon": 59.174
+          },
+          {
+            "leadH": 54,
+            "lat": 20.815,
+            "lon": 58.739
+          },
+          {
+            "leadH": 60,
+            "lat": 20.699,
+            "lon": 58.303
+          },
+          {
+            "leadH": 66,
+            "lat": 20.582,
+            "lon": 57.868
+          },
+          {
+            "leadH": 72,
+            "lat": 20.466,
+            "lon": 57.432
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-09-01T00:00:00Z",
+      "lat": 22,
+      "lon": 62.2,
+      "observed": {
+        "maxWindKt": 30,
+        "minPressureHpa": 1000
+      },
+      "predicted": {
+        "centre": {
+          "dLat": -0.16,
+          "dLon": -0.057
+        },
+        "gradeProbs": {
+          "D": 0.2282,
+          "DD": 0.4874,
+          "CS": 0.2843,
+          "SCS": 0.0001,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 30.9,
+              "p10": 25.3,
+              "p90": 37
+            },
+            "pressure": {
+              "mean": 999.3,
+              "p10": 995.8,
+              "p90": 1002.1
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 17.6,
+              "p10": 10,
+              "p90": 30.1
+            },
+            "pressure": {
+              "mean": 1005.5,
+              "p10": 999.7,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 18.6,
+              "p10": 10,
+              "p90": 34.5
+            },
+            "pressure": {
+              "mean": 1005.1,
+              "p10": 997.3,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 33.1
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 998.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.02,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 22,
+            "lon": 62.2,
+            "radiusKm": 36,
+            "windKt": 30
+          },
+          {
+            "leadH": 6,
+            "lat": 21.733,
+            "lon": 61.651,
+            "radiusKm": 57,
+            "windKt": 28
+          },
+          {
+            "leadH": 12,
+            "lat": 21.461,
+            "lon": 61.094,
+            "radiusKm": 78,
+            "windKt": 25
+          },
+          {
+            "leadH": 18,
+            "lat": 21.284,
+            "lon": 60.628,
+            "radiusKm": 99,
+            "windKt": 22
+          },
+          {
+            "leadH": 24,
+            "lat": 21.105,
+            "lon": 60.154,
+            "radiusKm": 120,
+            "windKt": 18
+          },
+          {
+            "leadH": 30,
+            "lat": 20.956,
+            "lon": 59.656,
+            "radiusKm": 141,
+            "windKt": 15
+          },
+          {
+            "leadH": 36,
+            "lat": 20.808,
+            "lon": 59.153,
+            "radiusKm": 162,
+            "windKt": 15
+          },
+          {
+            "leadH": 42,
+            "lat": 20.658,
+            "lon": 58.644,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 20.508,
+            "lon": 58.131,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 20.355,
+            "lon": 57.613,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 20.201,
+            "lon": 57.09,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.049,
+            "lon": 56.561,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 19.898,
+            "lon": 56.026,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "sheared",
+          "prob": 0.78
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.93,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.95,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 20.5,
+          "units": "kt",
+          "anomaly": 1.42
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.46
+        },
+        "midRH": {
+          "value": 54.5,
+          "units": "%",
+          "anomaly": -1.05
+        },
+        "vorticity": {
+          "value": 15.4,
+          "units": "1e-5 s⁻¹",
+          "anomaly": 0.07
+        },
+        "divergence": {
+          "value": 1.9,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -1.05
+        },
+        "steering": {
+          "value": 5.9,
+          "units": "kt",
+          "anomaly": -0.52
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.617,
+            "y": 0.438,
+            "radius": 0.12,
+            "weight": 0.95
+          },
+          {
+            "x": 0.717,
+            "y": 0.351,
+            "radius": 0.08,
+            "weight": 0.6
+          },
+          {
+            "x": 0.486,
+            "y": 0.532,
+            "radius": 0.05,
+            "weight": 0.35
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.275,
+            "sst": 0.16,
+            "midRH": 0.182,
+            "vorticity": 0.095,
+            "divergence": 0.182,
+            "steering": 0.106
+          },
+          "ri": {
+            "shear": 0.35,
+            "sst": 0.205,
+            "midRH": 0.276,
+            "vorticity": 0.05,
+            "divergence": 0.091,
+            "steering": 0.028
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 32,
+        "nwpWindKt": 33,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 22,
+            "lon": 62.2
+          },
+          {
+            "leadH": 6,
+            "lat": 21.721,
+            "lon": 61.525
+          },
+          {
+            "leadH": 12,
+            "lat": 21.442,
+            "lon": 60.85
+          },
+          {
+            "leadH": 18,
+            "lat": 21.263,
+            "lon": 60.275
+          },
+          {
+            "leadH": 24,
+            "lat": 21.083,
+            "lon": 59.7
+          },
+          {
+            "leadH": 30,
+            "lat": 20.94,
+            "lon": 59.16
+          },
+          {
+            "leadH": 36,
+            "lat": 20.797,
+            "lon": 58.619
+          },
+          {
+            "leadH": 42,
+            "lat": 20.655,
+            "lon": 58.079
+          },
+          {
+            "leadH": 48,
+            "lat": 20.512,
+            "lon": 57.539
+          },
+          {
+            "leadH": 54,
+            "lat": 20.364,
+            "lon": 56.995
+          },
+          {
+            "leadH": 60,
+            "lat": 20.217,
+            "lon": 56.451
+          },
+          {
+            "leadH": 66,
+            "lat": 20.069,
+            "lon": 55.907
+          },
+          {
+            "leadH": 72,
+            "lat": 19.922,
+            "lon": 55.363
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-09-01T06:00:00Z",
+      "lat": 21.8,
+      "lon": 61.6,
+      "observed": {
+        "maxWindKt": 28,
+        "minPressureHpa": 1001
+      },
+      "predicted": {
+        "centre": {
+          "dLat": -0.138,
+          "dLon": 0.157
+        },
+        "gradeProbs": {
+          "D": 0.4651,
+          "DD": 0.425,
+          "CS": 0.1099,
+          "SCS": 0,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 27.9,
+              "p10": 22.3,
+              "p90": 34
+            },
+            "pressure": {
+              "mean": 1000.8,
+              "p10": 997.5,
+              "p90": 1003.5
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 27.5
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 1001.1,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 30.9
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 999.3,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 17.7,
+              "p10": 10,
+              "p90": 35.7
+            },
+            "pressure": {
+              "mean": 1005.5,
+              "p10": 996.6,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 21.8,
+            "lon": 61.6,
+            "radiusKm": 36,
+            "windKt": 28
+          },
+          {
+            "leadH": 6,
+            "lat": 21.627,
+            "lon": 61.083,
+            "radiusKm": 57,
+            "windKt": 25
+          },
+          {
+            "leadH": 12,
+            "lat": 21.546,
+            "lon": 60.67,
+            "radiusKm": 78,
+            "windKt": 22
+          },
+          {
+            "leadH": 18,
+            "lat": 21.456,
+            "lon": 60.258,
+            "radiusKm": 99,
+            "windKt": 18
+          },
+          {
+            "leadH": 24,
+            "lat": 21.358,
+            "lon": 59.847,
+            "radiusKm": 120,
+            "windKt": 15
+          },
+          {
+            "leadH": 30,
+            "lat": 21.246,
+            "lon": 59.397,
+            "radiusKm": 141,
+            "windKt": 15
+          },
+          {
+            "leadH": 36,
+            "lat": 21.13,
+            "lon": 58.947,
+            "radiusKm": 162,
+            "windKt": 15
+          },
+          {
+            "leadH": 42,
+            "lat": 21.009,
+            "lon": 58.495,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 20.883,
+            "lon": 58.042,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 20.752,
+            "lon": 57.592,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 20.617,
+            "lon": 57.14,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.476,
+            "lon": 56.685,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.331,
+            "lon": 56.228,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "sheared",
+          "prob": 0.78
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.9,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 21.1,
+          "units": "kt",
+          "anomaly": 1.51
+        },
+        "sst": {
+          "value": 28.8,
+          "units": "°C",
+          "anomaly": 0.38
+        },
+        "midRH": {
+          "value": 52.1,
+          "units": "%",
+          "anomaly": -1.29
+        },
+        "vorticity": {
+          "value": 14.8,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.04
+        },
+        "divergence": {
+          "value": 1.9,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -1.05
+        },
+        "steering": {
+          "value": 5.9,
+          "units": "kt",
+          "anomaly": -0.52
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.6,
+            "y": 0.437,
+            "radius": 0.12,
+            "weight": 0.95
+          },
+          {
+            "x": 0.68,
+            "y": 0.371,
+            "radius": 0.08,
+            "weight": 0.6
+          },
+          {
+            "x": 0.487,
+            "y": 0.528,
+            "radius": 0.05,
+            "weight": 0.35
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.276,
+            "sst": 0.15,
+            "midRH": 0.2,
+            "vorticity": 0.091,
+            "divergence": 0.179,
+            "steering": 0.104
+          },
+          "ri": {
+            "shear": 0.35,
+            "sst": 0.19,
+            "midRH": 0.296,
+            "vorticity": 0.048,
+            "divergence": 0.089,
+            "steering": 0.027
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 26,
+        "nwpWindKt": 26,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 21.8,
+            "lon": 61.6
+          },
+          {
+            "leadH": 6,
+            "lat": 21.507,
+            "lon": 61.054
+          },
+          {
+            "leadH": 12,
+            "lat": 21.314,
+            "lon": 60.607
+          },
+          {
+            "leadH": 18,
+            "lat": 21.121,
+            "lon": 60.16
+          },
+          {
+            "leadH": 24,
+            "lat": 20.927,
+            "lon": 59.714
+          },
+          {
+            "leadH": 30,
+            "lat": 20.777,
+            "lon": 59.242
+          },
+          {
+            "leadH": 36,
+            "lat": 20.627,
+            "lon": 58.771
+          },
+          {
+            "leadH": 42,
+            "lat": 20.476,
+            "lon": 58.3
+          },
+          {
+            "leadH": 48,
+            "lat": 20.326,
+            "lon": 57.828
+          },
+          {
+            "leadH": 54,
+            "lat": 20.17,
+            "lon": 57.36
+          },
+          {
+            "leadH": 60,
+            "lat": 20.014,
+            "lon": 56.891
+          },
+          {
+            "leadH": 66,
+            "lat": 19.859,
+            "lon": 56.422
+          },
+          {
+            "leadH": 72,
+            "lat": 19.703,
+            "lon": 55.953
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-09-01T12:00:00Z",
+      "lat": 21.6,
+      "lon": 61,
+      "observed": {
+        "maxWindKt": 25,
+        "minPressureHpa": 1002
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.092,
+          "dLon": -0.154
+        },
+        "gradeProbs": {
+          "D": 0.6773,
+          "DD": 0.2847,
+          "CS": 0.038,
+          "SCS": 0,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 25.4,
+              "p10": 19.8,
+              "p90": 31.5
+            },
+            "pressure": {
+              "mean": 1002.1,
+              "p10": 998.9,
+              "p90": 1004.6
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 27.5
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 1001.1,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 15.6,
+              "p10": 10,
+              "p90": 31.5
+            },
+            "pressure": {
+              "mean": 1006.3,
+              "p10": 998.9,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 18.5,
+              "p10": 10,
+              "p90": 36.5
+            },
+            "pressure": {
+              "mean": 1005.2,
+              "p10": 996.1,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.04,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 21.6,
+            "lon": 61,
+            "radiusKm": 36,
+            "windKt": 25
+          },
+          {
+            "leadH": 6,
+            "lat": 21.501,
+            "lon": 60.588,
+            "radiusKm": 57,
+            "windKt": 22
+          },
+          {
+            "leadH": 12,
+            "lat": 21.393,
+            "lon": 60.176,
+            "radiusKm": 78,
+            "windKt": 18
+          },
+          {
+            "leadH": 18,
+            "lat": 21.277,
+            "lon": 59.763,
+            "radiusKm": 99,
+            "windKt": 15
+          },
+          {
+            "leadH": 24,
+            "lat": 21.152,
+            "lon": 59.349,
+            "radiusKm": 120,
+            "windKt": 15
+          },
+          {
+            "leadH": 30,
+            "lat": 21.026,
+            "lon": 58.892,
+            "radiusKm": 141,
+            "windKt": 15
+          },
+          {
+            "leadH": 36,
+            "lat": 20.896,
+            "lon": 58.433,
+            "radiusKm": 162,
+            "windKt": 15
+          },
+          {
+            "leadH": 42,
+            "lat": 20.761,
+            "lon": 57.972,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 20.623,
+            "lon": 57.507,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 20.479,
+            "lon": 57.044,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 20.33,
+            "lon": 56.578,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.178,
+            "lon": 56.107,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.023,
+            "lon": 55.632,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.81
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.9,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.91,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.95,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 18.7,
+          "units": "kt",
+          "anomaly": 1.12
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.46
+        },
+        "midRH": {
+          "value": 56.7,
+          "units": "%",
+          "anomaly": -0.83
+        },
+        "vorticity": {
+          "value": 13.6,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.24
+        },
+        "divergence": {
+          "value": 2.1,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.97
+        },
+        "steering": {
+          "value": 4.8,
+          "units": "kt",
+          "anomaly": -0.81
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.578,
+            "y": 0.533,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.502,
+            "y": 0.625,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.36,
+            "y": 0.615,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.231,
+            "y": 0.46,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.25,
+            "sst": 0.162,
+            "midRH": 0.165,
+            "vorticity": 0.112,
+            "divergence": 0.178,
+            "steering": 0.133
+          },
+          "ri": {
+            "shear": 0.331,
+            "sst": 0.216,
+            "midRH": 0.263,
+            "vorticity": 0.058,
+            "divergence": 0.094,
+            "steering": 0.038
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 25,
+        "nwpWindKt": 29,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 21.6,
+            "lon": 61
+          },
+          {
+            "leadH": 6,
+            "lat": 21.485,
+            "lon": 60.388
+          },
+          {
+            "leadH": 12,
+            "lat": 21.371,
+            "lon": 59.775
+          },
+          {
+            "leadH": 18,
+            "lat": 21.256,
+            "lon": 59.163
+          },
+          {
+            "leadH": 24,
+            "lat": 21.141,
+            "lon": 58.551
+          },
+          {
+            "leadH": 30,
+            "lat": 21.033,
+            "lon": 57.991
+          },
+          {
+            "leadH": 36,
+            "lat": 20.925,
+            "lon": 57.431
+          },
+          {
+            "leadH": 42,
+            "lat": 20.816,
+            "lon": 56.871
+          },
+          {
+            "leadH": 48,
+            "lat": 20.708,
+            "lon": 56.31
+          },
+          {
+            "leadH": 54,
+            "lat": 20.599,
+            "lon": 55.744
+          },
+          {
+            "leadH": 60,
+            "lat": 20.49,
+            "lon": 55.178
+          },
+          {
+            "leadH": 66,
+            "lat": 20.381,
+            "lon": 54.612
+          },
+          {
+            "leadH": 72,
+            "lat": 20.272,
+            "lon": 54.046
+          }
+        ]
+      }
+    },
+    {
+      "time": "2024-09-01T18:00:00Z",
+      "lat": 21.5,
+      "lon": 60.5,
+      "observed": {
+        "maxWindKt": 22,
+        "minPressureHpa": 1004
+      },
+      "predicted": {
+        "centre": {
+          "dLat": 0.042,
+          "dLon": -0.023
+        },
+        "gradeProbs": {
+          "D": 0.8463,
+          "DD": 0.1436,
+          "CS": 0.0101,
+          "SCS": 0,
+          "VSCS": 0,
+          "ESCS": 0,
+          "SuCS": 0
+        },
+        "intensity": [
+          {
+            "leadH": 0,
+            "wind": {
+              "mean": 22.8,
+              "p10": 17.2,
+              "p90": 29
+            },
+            "pressure": {
+              "mean": 1003.3,
+              "p10": 1000.3,
+              "p90": 1005.7
+            }
+          },
+          {
+            "leadH": 24,
+            "wind": {
+              "mean": 15.4,
+              "p10": 10,
+              "p90": 27.9
+            },
+            "pressure": {
+              "mean": 1006.4,
+              "p10": 1000.9,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 48,
+            "wind": {
+              "mean": 15,
+              "p10": 10,
+              "p90": 30.9
+            },
+            "pressure": {
+              "mean": 1006.5,
+              "p10": 999.3,
+              "p90": 1008.1
+            }
+          },
+          {
+            "leadH": 72,
+            "wind": {
+              "mean": 17.7,
+              "p10": 10,
+              "p90": 35.8
+            },
+            "pressure": {
+              "mean": 1005.5,
+              "p10": 996.5,
+              "p90": 1008.1
+            }
+          }
+        ],
+        "riProb24h": 0.03,
+        "track": [
+          {
+            "leadH": 0,
+            "lat": 21.5,
+            "lon": 60.5,
+            "radiusKm": 36,
+            "windKt": 22
+          },
+          {
+            "leadH": 6,
+            "lat": 21.461,
+            "lon": 60.059,
+            "radiusKm": 57,
+            "windKt": 18
+          },
+          {
+            "leadH": 12,
+            "lat": 21.416,
+            "lon": 59.625,
+            "radiusKm": 78,
+            "windKt": 15
+          },
+          {
+            "leadH": 18,
+            "lat": 21.364,
+            "lon": 59.197,
+            "radiusKm": 99,
+            "windKt": 15
+          },
+          {
+            "leadH": 24,
+            "lat": 21.306,
+            "lon": 58.775,
+            "radiusKm": 120,
+            "windKt": 15
+          },
+          {
+            "leadH": 30,
+            "lat": 21.218,
+            "lon": 58.325,
+            "radiusKm": 141,
+            "windKt": 15
+          },
+          {
+            "leadH": 36,
+            "lat": 21.126,
+            "lon": 57.876,
+            "radiusKm": 162,
+            "windKt": 15
+          },
+          {
+            "leadH": 42,
+            "lat": 21.029,
+            "lon": 57.43,
+            "radiusKm": 182,
+            "windKt": 15
+          },
+          {
+            "leadH": 48,
+            "lat": 20.928,
+            "lon": 56.984,
+            "radiusKm": 203,
+            "windKt": 15
+          },
+          {
+            "leadH": 54,
+            "lat": 20.824,
+            "lon": 56.544,
+            "radiusKm": 224,
+            "windKt": 15
+          },
+          {
+            "leadH": 60,
+            "lat": 20.714,
+            "lon": 56.104,
+            "radiusKm": 245,
+            "windKt": 15
+          },
+          {
+            "leadH": 66,
+            "lat": 20.599,
+            "lon": 55.665,
+            "radiusKm": 266,
+            "windKt": 15
+          },
+          {
+            "leadH": 72,
+            "lat": 20.478,
+            "lon": 55.225,
+            "radiusKm": 287,
+            "windKt": 15
+          }
+        ],
+        "landfallStatus": "none-72h",
+        "landfall": null,
+        "flags": {
+          "recurving": false,
+          "stalling": false,
+          "atypical": "land genesis"
+        },
+        "structure": {
+          "pattern": "curved band",
+          "prob": 0.62
+        }
+      },
+      "inputs": {
+        "insat": {
+          "available": true,
+          "quality": 0.92,
+          "flag": "ok"
+        },
+        "era5": {
+          "available": true,
+          "quality": 0.94,
+          "flag": "ok"
+        },
+        "track": {
+          "available": true,
+          "quality": 0.96,
+          "flag": "ok"
+        }
+      },
+      "physics": {
+        "shear": {
+          "value": 18.7,
+          "units": "kt",
+          "anomaly": 1.12
+        },
+        "sst": {
+          "value": 28.9,
+          "units": "°C",
+          "anomaly": 0.55
+        },
+        "midRH": {
+          "value": 57.5,
+          "units": "%",
+          "anomaly": -0.75
+        },
+        "vorticity": {
+          "value": 13.5,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -0.25
+        },
+        "divergence": {
+          "value": 1.9,
+          "units": "1e-5 s⁻¹",
+          "anomaly": -1.03
+        },
+        "steering": {
+          "value": 4.8,
+          "units": "kt",
+          "anomaly": -0.81
+        }
+      },
+      "explainability": {
+        "blobs": [
+          {
+            "x": 0.563,
+            "y": 0.549,
+            "radius": 0.07,
+            "weight": 0.9
+          },
+          {
+            "x": 0.512,
+            "y": 0.638,
+            "radius": 0.07,
+            "weight": 0.75
+          },
+          {
+            "x": 0.352,
+            "y": 0.635,
+            "radius": 0.07,
+            "weight": 0.6
+          },
+          {
+            "x": 0.227,
+            "y": 0.454,
+            "radius": 0.07,
+            "weight": 0.45
+          }
+        ],
+        "importance": {
+          "intensity": {
+            "shear": 0.248,
+            "sst": 0.169,
+            "midRH": 0.157,
+            "vorticity": 0.112,
+            "divergence": 0.182,
+            "steering": 0.132
+          },
+          "ri": {
+            "shear": 0.33,
+            "sst": 0.227,
+            "midRH": 0.252,
+            "vorticity": 0.058,
+            "divergence": 0.095,
+            "steering": 0.038
+          }
+        }
+      },
+      "comparators": {
+        "adtWindKt": 24,
+        "nwpWindKt": 21,
+        "nwpTrack": [
+          {
+            "leadH": 0,
+            "lat": 21.5,
+            "lon": 60.5
+          },
+          {
+            "leadH": 6,
+            "lat": 21.295,
+            "lon": 60.011
+          },
+          {
+            "leadH": 12,
+            "lat": 21.09,
+            "lon": 59.522
+          },
+          {
+            "leadH": 18,
+            "lat": 20.885,
+            "lon": 59.033
+          },
+          {
+            "leadH": 24,
+            "lat": 20.679,
+            "lon": 58.543
+          },
+          {
+            "leadH": 30,
+            "lat": 20.522,
+            "lon": 58.049
+          },
+          {
+            "leadH": 36,
+            "lat": 20.366,
+            "lon": 57.555
+          },
+          {
+            "leadH": 42,
+            "lat": 20.209,
+            "lon": 57.061
+          },
+          {
+            "leadH": 48,
+            "lat": 20.052,
+            "lon": 56.567
+          },
+          {
+            "leadH": 54,
+            "lat": 19.889,
+            "lon": 56.073
+          },
+          {
+            "leadH": 60,
+            "lat": 19.726,
+            "lon": 55.579
+          },
+          {
+            "leadH": 66,
+            "lat": 19.563,
+            "lon": 55.086
+          },
+          {
+            "leadH": 72,
+            "lat": 19.4,
+            "lon": 54.592
+          }
+        ]
+      }
+    }
+  ]
+}

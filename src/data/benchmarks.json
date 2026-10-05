@@ -1,0 +1,16 @@
+{
+  "source": "IMD RSMC New Delhi, 2020-24 average errors. Targets to report against, not results.",
+  "imd": [
+    { "metric": "Track error", "units": "km", "h24": 72, "h48": 111, "h72": 154 },
+    { "metric": "Intensity error", "units": "kt", "h24": 5.9, "h48": 8.3, "h72": 9.8 },
+    { "metric": "Landfall-time error", "units": "h", "h24": 2.9, "h48": 4.2, "h72": 7.5 }
+  ],
+  "ourMvp": {
+    "label": "placeholder: to be filled after training",
+    "rows": [
+      { "metric": "Track error", "units": "km", "h24": null, "h48": null, "h72": null },
+      { "metric": "Intensity error", "units": "kt", "h24": null, "h48": null, "h72": null },
+      { "metric": "Landfall-time error", "units": "h", "h24": null, "h48": null, "h72": null }
+    ]
+  }
+}
